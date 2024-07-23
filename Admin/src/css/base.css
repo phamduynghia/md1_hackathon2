@@ -389,8 +389,7 @@ html {
     margin-bottom: 1px;
 }
 
-.sidebar-item.active,
-.sidebar-item:hover {
+.sidebar-item.active {
     background-color: #1e3054;
     transition: all 0.2s ease-in;
 }
@@ -433,12 +432,6 @@ html {
     color: #d5e0f4;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.table-add:hover {
-    background-color: #3072ee;
-    color: #eff3fb;
-    transition: all 0.1s linear;
 }
 
 thead,
@@ -590,21 +583,11 @@ th {
     margin-right: 10px;
 }
 
-.btn-primary:hover {
-    background-color: #626060;
-    color: #f1eded;
-}
-
 .btn-susses {
     background-color: #2065e5;
     color: #d5e0f4;
     border-radius: 5px;
     font-weight: 600;
-}
-
-.btn-susses:hover {
-    background-color: #3072ee;
-    color: #eff3fb;
 }
 
 .table-imgs-skill {
