@@ -13,7 +13,6 @@ html {
 }
 
 .grid {
-    /*  hệ thống lưới*/
     width: 100%;
     display: block;
     padding: 0;
@@ -25,7 +24,6 @@ html {
 }
 
 .row {
-    /* dòng*/
     display: flex;
     flex-wrap: wrap;
     margin-left: -16px;
@@ -40,7 +38,6 @@ html {
 }
 
 .col {
-    /* cột*/
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 16px;
@@ -83,7 +80,6 @@ html {
     max-width: 100%;
 }
 
-/* >= Tablet */
 @media (min-width: 740px) {
     .row {
         margin-left: -8px;
@@ -129,7 +125,6 @@ html {
 
 }
 
-/* PC medium resolution > */
 @media (min-width: 1113px) {
     .row {
         margin-left: -14px;
@@ -190,14 +185,12 @@ html {
 
 }
 
-/* Tablet - PC low resolution */
 @media (min-width: 740px) and (max-width: 1023px) {
     .wide {
         width: 644px;
     }
 }
 
-/* > PC low resolution */
 @media (min-width: 1024px) and (max-width: 1239px) {
     .wide {
         width: 984px;
@@ -268,8 +261,6 @@ html {
 .btn {
     min-width: 80px;
     height: 36px;
-    text-decoration: none;
-    border: none;
     border-radius: 2px;
     font-size: 1.4rem;
     padding: 0 16px;
@@ -317,21 +308,20 @@ html {
     }
 }
 
-.modal-textarea {
-    border: 1px solid #c0b8b8;
+.Mta {
+    border: 2px solid #857272;
     width: 100%;
     font-size: 14px;
     padding: 10px;
     outline: none;
-    box-shadow: 0 0.5px 2px rgba(96, 97, 112, 0.36);
+    box-shadow: 0 0.3px 1px rgba(10, 21, 169, 0.36);
     border-radius: 4px;
-    resize: none;
 }
 
 .icon-update {
     background-color: #fdb973;
     color: #393939;
-    border: 1px solid #fdb973;
+    border: 2px solid #fdb973;
     border-radius: 4px;
     margin-right: 6px;
 }
@@ -343,12 +333,12 @@ html {
 
 .header {
     height: 100px;
-    background-color: #dadada;
+    background-color: #ecb4b4;
     display: flex;
     align-items: center;
     justify-content: end;
     padding: 0 10px;
-    box-shadow: 0 4px 3px rgba(84, 85, 97, 0.3);
+    box-shadow: 0 4px 3px rgba(26, 38, 168, 0.3);
 }
 
 .header_title {
@@ -451,7 +441,6 @@ html {
     transition: all 0.1s linear;
 }
 
-
 thead,
 tbody,
 tr,
@@ -485,14 +474,14 @@ th {
 .table-td {
     text-align: center;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 200;
     color: #393939;
 }
 
 .btn.icon-btn {
-    color: #e72538;
-    border: 1px solid #da1d30;
-    border-radius: 4px;
+    color: #f33c4f;
+    border: 2px solid #6e030d;
+    border-radius: 10px;
 }
 
 #adnew {
@@ -585,8 +574,6 @@ th {
     font-weight: 500;
     color: rgb(236, 60, 60);
 }
-
-
 
 .modal-btn {
     margin-top: 30px;
