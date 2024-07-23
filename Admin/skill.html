@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="../Admin/src/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <main class="appAdmin">
+        <header class="header">
+            <a href="" class="header_users">
+                <span>Duy Nghia</span>
+                <div class="HdUserImg"></div>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+        </header>
+        <section class="container">
+            <div class="grid">
+                <div class="row gt">
+                    <div class="col le me ce">
+                        <nav class="sidebar_content">
+                            <ul class="sidebar-list">
+                                <li class="sidebar-item active">
+                                    <a href="/Admin/skill.html" class="sidebar_link">
+                                        <span>Kỹ năng</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="/Admin/project.html" class="sidebar_link">
+                                        <span>Dự án</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="http://127.0.0.1:5500/UI/index.html" class="sidebar_link">
+                                        <span>index</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col lo mo co">
+                        <section id="adnew" class="hidden">
+                            <form class="modal-product" id="formnew">
+                                <div class="modal-content">
+                                    <header class="modal-header">
+                                        <h4 class="modal-head" id="cateTitle">
+                                            Thêm mới kỹ năng
+                                        </h4>
+                                        <ion-icon id="btnIcon" name="close-circle-outline"></ion-icon>
+                                    </header>
+                                    <div class="ctt">
+                                        <label for="name" class="modal-label">
+                                            Tên kỹ năng:
+                                        </label>
+                                        <input type="text" name="name" id="name" class="modal-input">
+                                        <p class="error-name" id="errorName"></p>
+                                    </div>
+                                    <div class="ctt">
+                                        <label for="name" class="modal-label">
+                                            Hình ảnh:
+                                        </label>
+                                        <input type="text" name="image" id="image" class="modal-input">
+                                        <p class="error-name" id="errorImage"></p>
+                                    </div>
+                                    <div class="ctt modal-btn">
+                                        <button id="btnCancel" class="btn btn-primary" type="button">
+                                            Hủy
+                                        </button>
+                                        <button class="btn btn-susses" type="submit" id="btnSubmit">Thêm</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                        <div class="tablewrapper">
+                            <header class="table-header">
+                                <h3 class="table-head">
+                                    Kỹ năng
+                                </h3>
+                                <button id="newsk" class="btn table-add">
+                                    Thêm mới kỹ năng
+                                </button>
+                            </header>
+                        </div>
+                        <div id="table" class="table-body">
+                            <table class="table-inner">
+                                <thead class="table-thead">
+                                    <tr class="table-tr">
+                                        <th class="table-th" width="10%">STT</th>
+                                        <th class="table-th">Tên kỹ năng</th>
+                                        <th class="table-th">Hình ảnh</th>
+                                        <th class="table-th">Ngày thêm</th>
+                                        <th class="table-th">Chức năng</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="skillBody">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../Admin/src/javascript/admin.js"></script>
+
+</html>
